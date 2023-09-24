@@ -6,7 +6,7 @@ from gilded_rose import GildedRose, Item
 
 
 def test_normal_item_quality_degrades():
-    item = Item(normal_item_names, 5, 10)
+    item = Item("normal", 5, 10)
     gilded_rose = GildedRose([item])
     gilded_rose.update_quality()
     assert item.quality == 9
